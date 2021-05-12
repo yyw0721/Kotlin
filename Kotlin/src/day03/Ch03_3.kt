@@ -1,3 +1,5 @@
+package day03
+
 /*
 함수형 프로그래밍
     : 순수 함수를 작성하여 프로그램의 부작용을 줄이는 프로그래밍 기법
@@ -8,6 +10,19 @@
 */
 fun main(){
     val multi = {x: Int, y: Int -> x * y}
-    val result = multi(10, 20)
-    println(result)
+    val result1 = multi(10, 20)
+    println(result1)
+
+    val addFunc = {x: Int, y : Int -> x + y}
+    val subtratFunc = {x: Int, y: Int -> x - y}
+    val multipleFunc = {x: Int, y: Int -> x * y}
+    val divisionFunc = {x: Int, y: Int -> x / y}
+
+    val result2 = calc1(30, 10, addFunc)
+    println("더하기 결과 ${result2}")
+}
+
+fun calc1(first: Int, second: Int, oper: (Int, Int) -> Int) : Int {
+    val result = oper(first, second)
+    return result
 }

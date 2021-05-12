@@ -1,3 +1,5 @@
+package day01
+
 fun main(){
     var str1: String = "Hello Kotlin"
     var str2: String? = "Hello Kotlin"

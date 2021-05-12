@@ -1,3 +1,5 @@
+package day02
+
 fun main(){
     println("덧셈 : " + sum(10, 20))
     println("뺄셈 : " + subtration(10, 20))
