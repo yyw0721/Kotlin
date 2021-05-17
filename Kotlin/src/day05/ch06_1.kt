@@ -1,6 +1,6 @@
 package day05
 
-class User(_id: Int, _name: String, _age: Int) {
+class User1(_id: Int, _name: String, _age: Int) {
     val id: Int = _id
     get() = field
 
@@ -18,7 +18,7 @@ class User(_id: Int, _name: String, _age: Int) {
 }
 
 fun main(){
-    val user1 = User(1, "Hong", 30)
+    val user1 = User1(1, "Hong", 30)
     user1.age = 35
     println("user1.age = ${user1.age}")
 }
